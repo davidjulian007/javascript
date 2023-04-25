@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>SegEntrega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
 </head>
 <body>
-    <script src="script.js"></script>
+
+    <h1>Concurso dia del Padre</h1>
+    <h3>Personas Anotadas al concurso</h3>
+
+    <ul id="mostrarPersonasInscriptas"></ul>
+
+    <h3>Formulario de adhesión al concurso</h3>
+    <form id="agregarPersona">
+     
+        <label for="nombre">Nombre de la persona</label>
+        <input type="text" name="nombre" class="nombre" required>
+        <br>
+        <label for="">Su Apellido</label>
+        <input type="text" name="" class="">
+        <br>
+        <label for="">Su Profesion</label>
+        <input type="text" name="" class="">
+        <br>
+        <label for="">Su Provicia</label>
+        <input type="text" name="" class="">
+        <br>
+        <label for="">Su Edad</label>
+        <input type="number" name="" class="">
+        <br>
+        <label for="">Su Hobby</label>
+        <input type="text" name="" class="">
+        <br>
+        <button type="submit">Inscribirse al concurso!</button>
+    </form>
+<br>
+<br>
+<div>
+  <h3>Aquí puede filtrar personas anotadas por Provincia</h3> 
+  <select id="filtrarPorProvinciaChange">
+    <option value="Buenos Aires">Buenos Aires</option>
+    <option value="Mendoza">Mendoza</option>
+    <option value="Corrientes">Corrientes</option>
+    <option value="Chubut">Chubut</option>
+</select>
+
+<br>
+<p id= "mostrarPorProvincia"></p>
+</div>
+  
+
+
+    <script src="app.js"></script>
 </body>
 </html>
